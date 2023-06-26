@@ -2,7 +2,7 @@
 ## Open-Vocabulary 3D Instance Segmentation 
 <div align="center">
 <a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>*1</sup>,
-<a href="https://jonasschult.github.io/">Elisabetta Fedele</a><sup>*1</sup>,
+<a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>*1</sup>,
 <br />
 <a href="https://people.inf.ethz.ch/~sumnerb/">Robert W. Sumner</a><sup>1</sup>,
 <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1</sup>,
@@ -18,7 +18,7 @@
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 
-![teaser](./docs/assets/teaser.jpg)
+![teaser](./docs/assets/teaser.jpeg)
 
 </div>
 <br><br>
