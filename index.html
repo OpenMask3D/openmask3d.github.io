@@ -1,170 +1,196 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="OpenMask3D">
-  <meta name="keywords" content="OpenMask3D">
+  <meta name="description"
+        content="3D Semantic Instance Segmentation with Open-Vocabulary queries">
+  <meta name="keywords" content="OpenMask3D, Instance Segmentation, 3D Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenMask3D 🛋</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-
-  <style>
-    .rcorners1 {
-      border-radius: 10px;
-      background: #ffffffd0;
-      padding: 5px;
-      font-size: 120%;
-      color: #5c5c5c;
-    }
-  </style>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OpenMask3D 🛋<br />
+            <p class="title is-3 publication-title">Open-Vocabulary 3D Instance Segmentation </p>
+          </h1>          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>1*</sup>,
+            </span>
+            <br />
+            <span class="author-block">
+              <a href="https://studios.disneyresearch.com/people/bob-sumner/">Robert W. Sumner</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://federicotombari.github.io/">Federico Tombari</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>1,2,3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich, Switzerland</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>ETH AI Center, Switzerland</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Google Zürich, Switzerland</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>*</sup>equal contribution</span>
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">OpenMask3D 🛋<br />
-              <p class="title is-3 publication-title">Open-Vocabulary 3D Instance Segmentation </p>
-            </h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>1*</sup>,</span>
-              <span class="author-block">
-                <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>1*</sup>,
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="static/pdf/openmask3d.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
               </span>
-              <br />
-              <span class="author-block">
-                <a href="https://studios.disneyresearch.com/people/bob-sumner/">Robert W. Sumner</a><sup>1</sup>,
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2306.13631"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
               </span>
-              <span class="author-block">
-                <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1</sup>,
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
               </span>
-              <span class="author-block">
-                <a href="https://federicotombari.github.io/">Federico Tombari</a><sup>3</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>1,2,3</sup>
-              </span>
+    
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich, Switzerland</span>
-              <span class="author-block" style="margin-right: 1em;"><sup>2</sup>ETH AI Center, Switzerland</span>
-              <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Google Zürich, Switzerland</span>
-              <span class="author-block" style="margin-right: 1em;"><sup>*</sup>equal contribution</span>
-            </div>
-            <span class="link-block">
-              <a href="assets/openmask3d.pdf" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Paper</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a href="#" class="external-link button is-normal is-rounded is-dark" style="background-color:#5c5c5c">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Code</span>
-              </a>
-            </span>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <img src="assets/teaser.jpeg" class="center"/>
-        <br><br>
-        <h2 class="subtitle has-text-centered">
-        <strong>OpenMask3D</strong> is a zero-shot approach to perform 3D Instance Segmentation with open-vocabulary queries.
-      </h2>
-      </div>
-    </div>
-  </section>
 
- 
-
-  <!--/ Abstract. -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              We introduce the task of open-vocabulary 3D instance segmentation. 
-              Traditional approaches for 3D instance segmentation largely rely on existing 3D annotated datasets, which are restricted to a closed-set of objects. 
-              This is an important limitation for real-life applications in which an autonomous agent might need to perform tasks guided by novel, open-vocabulary queries related to objects from a wide variety. 
-              Recently, open-vocabulary 3D scene understanding methods have emerged to address this problem by learning queryable features per each point in the scene. While such a representation can be directly employed to perform semantic segmentation, existing methods have limitations in their ability to handle object instances. 
-              In this work, we address this limitation, and propose OpenMask3D, which is a zero-shot approach for open-vocabulary 3D instance segmentation. Guided by predicted class-agnostic 3D instance masks, our model aggregates per-mask features via multi-view fusion of CLIP-based image embeddings.
-              We conduct experiments and ablation studies on the ScanNet200 dataset to evaluate the performance of OpenMask3D, and provide insights about the open-vocabulary 3D instance segmentation task. We show that our approach outperforms other open-vocabulary counterparts, particularly on the long-tail distribution.
-            </p>
-          </div>
-        </div>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.jpeg" class="center"/>
       <br><br>
-       <!-- Video. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Explanatory Video</h2>
-          <video controls poster="assets/explanatory_video_poster.jpeg">
-            <source src="assets/poster_session.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+      <h2 class="subtitle has-text-centered">
+      <strong>OpenMask3D</strong> is a zero-shot approach to perform 3D Instance Segmentation with open-vocabulary queries.
+    </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce the task of open-vocabulary 3D instance segmentation. 
+            Traditional approaches for 3D instance segmentation largely rely on existing 3D annotated datasets, which are restricted to a closed-set of objects. 
+            This is an important limitation for real-life applications in which an autonomous agent might need to perform tasks guided by novel, open-vocabulary queries related to objects from a wide variety. 
+            Recently, open-vocabulary 3D scene understanding methods have emerged to address this problem by learning queryable features per each point in the scene. While such a representation can be directly employed to perform semantic segmentation, existing methods have limitations in their ability to handle object instances. 
+            In this work, we address this limitation, and propose OpenMask3D, which is a zero-shot approach for open-vocabulary 3D instance segmentation. Guided by predicted class-agnostic 3D instance masks, our model aggregates per-mask features via multi-view fusion of CLIP-based image embeddings.
+            We conduct experiments and ablation studies on the ScanNet200 dataset to evaluate the performance of OpenMask3D, and provide insights about the open-vocabulary 3D instance segmentation task. We show that our approach outperforms other open-vocabulary counterparts, particularly on the long-tail distribution.
+          
+          </p>
         </div>
       </div>
-    </section>
-      
+    </div>
+    <!--/ Abstract. -->
 
-      
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Explanatory Video</h2>
+        <video controls poster="static/images/explanatory_video_poster.jpeg">
+          <source src="static/videos/poster_session.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+</section>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-8">
-              <div class="content">
-                <p>
-                  This website is licensed under a <a rel="license"
-                    href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                    Commons Attribution-ShareAlike 4.0 International License</a>.
-                </p>
-                <p>
-                  It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
-                  We would like to thank Utkarsh Sinha and Keunhong Park.
-                </p>
-              </div>
-            </div>
-          </div>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
+            We would like to thank Utkarsh Sinha and Keunhong Park.
+          </p>
         </div>
-      </footer>
-</body>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+      </div>
+    </div>
+  </div>
+</footer>
 
+</body>
 </html>
