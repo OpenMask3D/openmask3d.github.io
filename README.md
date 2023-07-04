@@ -14,12 +14,23 @@
 <sup>3</sup>Google Zürich, Switzerland
 <sup>*</sup>equal contribution
 
+<a href="https://arxiv.org/abs/2306.13631"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-badge"></a>
+
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 
 ![teaser](./static/images/teaser.jpeg)
 
 </div>
-<br><br>
 
+<h2 class="title is-3">BibTeX</h2>
+          <pre><code>
+@article{openmask3d,
+    title     = {{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
+    author    = {Takmaz, Ay\c{c}a and Fedele, Elisabetta and Sumner, Robert W and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
+    booktitle = {{arXiv:2306.13631}},
+    year      = {2023}
+  }</code></pre>
+    </div>
+  </div>
 ```
