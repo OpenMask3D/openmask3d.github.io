@@ -27,7 +27,7 @@
           <pre><code>
 @article{openmask3d,
     title     = {{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
-    author    = {Takmaz, Ay\c{c}a and Fedele, Elisabetta and Sumner, Robert W and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
+    author    = {Takmaz, Ay\c{c}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
     booktitle = {{arXiv:2306.13631}},
     year      = {2023}
   }</code></pre>
