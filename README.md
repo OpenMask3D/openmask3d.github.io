@@ -25,12 +25,14 @@
 
 <h2 class="title is-3">BibTeX</h2>
           <pre><code>
-@article{openmask3d,
-    title     = {{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
-    author    = {Takmaz, Ay\c{c}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
-    booktitle = {{arXiv:2306.13631}},
-    year      = {2023}
-  }</code></pre>
+@inproceedings{takmaz2023openmask3d,
+  title={{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
+  author={Takmaz, Ay{\c{c}}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+year={2023}
+}</code></pre>
     </div>
   </div>
+
+
 
