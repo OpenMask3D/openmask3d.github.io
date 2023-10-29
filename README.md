@@ -1,7 +1,7 @@
 # OpenMask3D 🛋
 ## Open-Vocabulary 3D Instance Segmentation 
 <div align="center">
-<a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>*1</sup>, &nbsp;&nbsp;&nbsp; <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>*1</sup>,
+<a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>1*</sup>, &nbsp;&nbsp;&nbsp; <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>1*</sup>,
 <br />
 <a href="https://people.inf.ethz.ch/~sumnerb/">Robert W. Sumner</a><sup>1</sup>,&nbsp;&nbsp;&nbsp;<a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1,2</sup>,&nbsp;&nbsp;&nbsp;<a href="https://federicotombari.github.io/">Federico Tombari</a><sup>3</sup>,&nbsp;&nbsp;&nbsp;<a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>1,3</sup>
 
